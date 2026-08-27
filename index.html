@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Weight CSV Export</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <form id="weight-form">
+    <h1>Garmin Weight Entry</h1>
+    <label>Date
+      <input type="date" id="date" required />
+    </label>
+    <label>Time
+      <input type="time" id="time" required />
+    </label>
+    <label>Weight (kg)
+      <input type="number" id="weight" step="0.1" min="0" required />
+    </label>
+    <label>BMI
+      <input type="number" id="bmi" step="0.1" min="0" required />
+    </label>
+    <label>Fat (%)
+      <input type="number" id="fat" step="0.1" min="0" required />
+    </label>
+    <button type="submit" class="btn">Download CSV</button>
+    <a class="btn btn-secondary" href="https://connect.garmin.com/app/import-data" target="_blank" rel="noopener noreferrer">Upload</a>
+  </form>
+  <script src="dist/app.js"></script>
+</body>
+</html>
